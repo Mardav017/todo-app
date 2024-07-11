@@ -1,7 +1,7 @@
 const TodoCard = ({ todos, handleDeleteTodo, handleCompleteTodo }) => {
   return (
     <div className='m-4 border-2 rounded-md h-[85%] overflow-y-scroll '>
-      {todos.map(todo => (
+      {todos && todos.map(todo => (
         <div
           key={todo.id}
           className={`text-left flex justify-between border px-2 ${
